@@ -17,22 +17,41 @@ h1 {
   letter-spacing: 2px;
   color: rgb(83, 193, 83);
 }
-.quote {
-}
+
 .exercise-section {
   padding-top: 100px;
   font-size: 20px;
   text-align: center;
 }
 .button {
-  background-color: rgb(83, 193, 83);
+  background-color: #53c153;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
   border-radius: 12px;
+}
+.selector-container {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center; /* center horizontally */
+  gap: 20px; /* space between buttons */
+  padding: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.previous {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+}
+.previous:hover {
+  color: #53c153;
 }
