@@ -7,7 +7,9 @@ function Home() {
   return (
     <div className="home-container">
       <h1> CALLOUSED </h1>
-      <p className="quote">💪stay hard!</p>
+      <p className="quote" style={{ marginTop: 10 }}>
+        💪stay hard!
+      </p>
 
       <div className="exercise-section">
         <Button onClick={() => navigate("/workout")}>Exercises</Button>

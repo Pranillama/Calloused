@@ -1,15 +1,15 @@
 //import { useState } from "react";
-import Button from "../components/Buttons";
+
 import "../App.css";
 import { useNavigate } from "react-router-dom";
-
+import WorkoutLists from "../components/WorkoutLists";
 function WorkoutSelector() {
   const navigate = useNavigate();
+
   return (
     <div className="selector-container">
-      <h1> CHOOSE WORKOUT </h1>
-      <Button>Weight Lifting</Button>
-      <Button>Running</Button>
+      <h1> CHOOSE WORKOUT</h1>
+      <WorkoutLists />
       <a href="#" className="previous" onClick={() => navigate("/")}>
         &#8249; back
       </a>

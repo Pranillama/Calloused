@@ -1,14 +1,13 @@
 /*src/App.css*/
+
 .home-container {
-  font-family: Arial, sans-serif;
-  /*border: 2px solid white;*/
   padding: 10px;
   text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
+.quote {
+  color: white;
+}
+
 h1 {
   font-size: 50px;
   margin: 0;
@@ -34,6 +33,8 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   border-radius: 12px;
+  width: 100px;
+  margin-bottom: 20px;
 }
 .selector-container {
   display: flex;
@@ -41,10 +42,6 @@ h1 {
   align-items: center; /* center horizontally */
   gap: 20px; /* space between buttons */
   padding: 20px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .previous {
   text-decoration: none;
@@ -54,4 +51,10 @@ h1 {
 }
 .previous:hover {
   color: #53c153;
+}
+.workout-lists {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
 }
