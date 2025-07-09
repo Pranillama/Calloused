@@ -16,26 +16,63 @@ h1 {
   letter-spacing: 2px;
   color: rgb(83, 193, 83);
 }
-
+h2 {
+  font-size: 25px;
+  margin: 0;
+  text-align: left;
+  letter-spacing: 1px;
+  color: rgb(83, 193, 83);
+}
+h3 {
+  margin: 0;
+  letter-spacing: 1px;
+  color: rgb(83, 193, 83);
+}
 .exercise-section {
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
   font-size: 20px;
   text-align: center;
 }
-.button {
+
+.button--primary {
+  /*for layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* gap between icon and text */
+
   background-color: #53c153;
   border: none;
   color: white;
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
   border-radius: 12px;
-  width: 100px;
   margin-bottom: 20px;
 }
+
+.button--secondary {
+  /*this first part for its style*/
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: #2d3137;
+  padding: 5px 20px;
+  margin-top: 10px;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.button--secondary:hover {
+  background-color: #444c58;
+}
+
 .selector-container {
   display: flex;
   flex-direction: column; /* stack items vertically */
@@ -57,4 +94,76 @@ h1 {
   flex-direction: column;
   padding: 50px;
   text-align: center;
+}
+.workout-card {
+  padding: 1rem;
+  border-radius: 12px;
+  color: white;
+  margin-top: 1rem;
+}
+.quick-start {
+  color: rgb(83, 193, 83); /* green or any highlight */
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.routines {
+  color: rgb(83, 193, 83); /* green or any highlight */
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.log-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-title {
+  color: rgb(83, 193, 83);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.log-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+.set-list-container {
+  margin-top: 1rem;
+}
+.set-list {
+  background: #333335;
+  padding: 1rem;
+  border-radius: 12px;
+  color: white;
+}
+.workout-history-container {
+  margin-top: 1rem;
+}
+.workout-scroll-area {
+  background-color: #333335;
+  border-radius: 12px;
+  max-height: 300px; /* You can adjust this */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 0.5rem; /* optional scroll gap */
+}
+.workout-scroll-area::-webkit-scrollbar {
+  width: 10px;
+  border-color: black;
+}
+.workout-scroll-area::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 193, 83);
+  border-radius: 8px;
 }

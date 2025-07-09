@@ -12,7 +12,12 @@ function Home() {
       </p>
 
       <div className="exercise-section">
-        <Button onClick={() => navigate("/workout")}>Exercises</Button>
+        <Button
+          className="button--primary"
+          onClick={() => navigate("/workout")}
+        >
+          Exercises
+        </Button>
       </div>
     </div>
   );

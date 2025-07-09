@@ -14,7 +14,11 @@ function WorkoutLists() {
   return (
     <div className="workout-lists">
       {workouts.map((workout, index) => (
-        <Button key={index} onClick={() => navigate(workout.Route)}>
+        <Button
+          className="button--primary"
+          key={index}
+          onClick={() => navigate(workout.Route)}
+        >
           {workout.name}
         </Button>
       ))}

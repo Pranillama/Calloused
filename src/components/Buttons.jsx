@@ -1,10 +1,22 @@
 import { ReactNode } from "react";
 
-const Button = ({ children, onClick }) => {
+const Button = ({
+  children,
+  onClick,
+  className = "",
+  variant = ["secondary", "primary"],
+}) => {
+  const variantClass = {
+    secondary: "button--secondary",
+  };
   return (
-    <div className="button" onClick={onClick}>
+    <button
+      className={`button ${variantClass[variant]} ${className}`}
+      onClick={onClick}
+    >
       {children}
-    </div>
+    </button>
   );
 };
 export default Button;
+// have 2 types of button a regular and then another light one.

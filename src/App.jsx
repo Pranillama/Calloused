@@ -1,8 +1,14 @@
 import Home from "./pages/Home";
 import "./App.css";
 import WorkoutSelector from "./pages/WorkoutSelector";
-import WeightLiftingLog from "./pages/WeightLiftingLog";
+
+//routes import for weightlifting pages
+import WeightRoom from "./pages/Weightlifting/WeightRoom";
+import LogWeightLifting from "./pages/Weightlifting/LogWeightLifting";
+import Save from "./pages/Weightlifting/Save";
+
 import RunningLog from "./pages/RunningLog";
+
 //import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
@@ -11,7 +17,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/workout" element={<WorkoutSelector />} />
-        <Route path="/weightlifting" element={<WeightLiftingLog />} />
+
+        {/*WeightLifting Section*/}
+        <Route path="/weightlifting" element={<WeightRoom />} />
+        <Route path="/weightlifting/log" element={<LogWeightLifting />} />
+        <Route path="/weightlifting/save" element={<Save />} />
+
+        {/*Running Section*/}
         <Route path="/running" element={<RunningLog />} />
       </Routes>
     </Router>
