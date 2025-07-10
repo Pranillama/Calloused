@@ -38,6 +38,7 @@ function LogWeightLifting() {
   return (
     <div className="log-container">
       <h1>Log Workouts</h1>
+      <FinishWorkout workoutHistory={workoutHistory} />
       <ExercisesForm
         exerciseName={exerciseName}
         setExerciseName={setExerciseName}
@@ -48,12 +49,11 @@ function LogWeightLifting() {
         onAddSet={handleAddSet}
       />
       <SetList sets={currentSets} />
-      <Button className="button--primary" onClick={handleAddWorkout}>
+      <Button className="button--third" onClick={handleAddWorkout}>
         <Plus />
         Add Exercise
       </Button>
       <WorkoutHistory history={workoutHistory} />
-      <FinishWorkout workoutHistory={workoutHistory} />
     </div>
   );
 }

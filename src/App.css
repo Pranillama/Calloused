@@ -35,7 +35,6 @@ h3 {
   font-size: 20px;
   text-align: center;
 }
-
 .button--primary {
   /*for layout */
   display: flex;
@@ -53,6 +52,8 @@ h3 {
   cursor: pointer;
   border-radius: 12px;
   margin-bottom: 20px;
+  width: 200px;
+  margin: auto;
 }
 
 .button--secondary {
@@ -71,6 +72,43 @@ h3 {
 }
 .button--secondary:hover {
   background-color: #444c58;
+}
+.button--third {
+  /*for layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* gap between icon and text */
+
+  background-color: #53c153;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: auto;
+  width: 100%;
+}
+.button--small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+
+  background-color: #53c153;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 5px 20px;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
 }
 
 .selector-container {
@@ -94,6 +132,7 @@ h3 {
   flex-direction: column;
   padding: 50px;
   text-align: center;
+  gap: 20px;
 }
 .workout-card {
   padding: 1rem;
@@ -160,10 +199,15 @@ h3 {
   padding-right: 0.5rem; /* optional scroll gap */
 }
 .workout-scroll-area::-webkit-scrollbar {
+  background-color: #262729;
   width: 10px;
   border-color: black;
 }
 .workout-scroll-area::-webkit-scrollbar-thumb {
+  background-color: rgb(66, 171, 66);
+  border-radius: 8px;
+}
+.workout-scroll-area::-webkit-scrollbar-thumb:hover {
   background-color: rgb(83, 193, 83);
   border-radius: 8px;
 }

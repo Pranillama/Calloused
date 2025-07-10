@@ -9,7 +9,7 @@ function FinishWorkout({ workoutHistory }) {
   };
 
   return (
-    <button className="button--primary" onClick={handleFinish}>
+    <button className="button--small" onClick={handleFinish}>
       Done
     </button>
   );

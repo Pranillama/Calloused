@@ -1,13 +1,11 @@
 import { ReactNode } from "react";
 
-const Button = ({
-  children,
-  onClick,
-  className = "",
-  variant = ["secondary", "primary"],
-}) => {
+const Button = ({ children, onClick, className = "", variant = "primary" }) => {
   const variantClass = {
+    primary: "button--primary",
     secondary: "button--secondary",
+    third: "button--third",
+    small: "button--small",
   };
   return (
     <button
@@ -19,4 +17,7 @@ const Button = ({
   );
 };
 export default Button;
-// have 2 types of button a regular and then another light one.
+// we have 3 button type:
+//1. primary: for all the main buttons
+//2. secondary: for the ghost button
+//3. third: for small / other stuff
