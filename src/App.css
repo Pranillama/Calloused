@@ -1,32 +1,57 @@
 /*src/App.css*/
-
+section {
+  display: flex; /* <— key line */
+  justify-content: space-between;
+  align-items: center; /* vertical centering */
+  min-height: 100vh; /* optional: fill viewport */
+  gap: 3rem; /* space between columns */
+  padding: 0 6vw; /* horizontal breathing room */
+}
 .home-container {
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* vertical stack */
+  align-items: flex-start; /* <-- align content (like button) to the left */
+  justify-content: center;
+  text-align: left;
 }
 .quote {
   color: white;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.image {
+  display: flex;
+  justify-content: flex-end;
 }
 
 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900; /* for 'Growth' */
   font-size: 50px;
   margin: 0;
   text-align: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: rgb(83, 193, 83);
+  letter-spacing: -1px;
+  background: linear-gradient(
+    90deg,
+    rgba(76, 103, 112, 1) 0%,
+    rgba(117, 157, 169, 1) 50%,
+    rgb(45, 53, 55) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 h2 {
   font-size: 25px;
   margin: 0;
   text-align: left;
   letter-spacing: 1px;
-  color: rgb(83, 193, 83);
+  color: rgba(76, 103, 112, 1);
 }
 h3 {
   margin: 0;
   letter-spacing: 1px;
-  color: rgb(83, 193, 83);
+  color: rgba(76, 103, 112, 1);
 }
 .exercise-section {
   display: flex;
@@ -42,7 +67,7 @@ h3 {
   justify-content: center;
   gap: 0.5rem; /* gap between icon and text */
 
-  background-color: #53c153;
+  background: linear-gradient(to right, #67a4b9, #274855);
   border: none;
   color: white;
   padding: 15px 30px;
@@ -55,7 +80,9 @@ h3 {
   width: 200px;
   margin: auto;
 }
-
+.button--primary:hover {
+  background: linear-gradient(to right, #2f5463, #254e57);
+}
 .button--secondary {
   /*this first part for its style*/
   display: flex;
@@ -80,7 +107,7 @@ h3 {
   justify-content: center;
   gap: 0.5rem; /* gap between icon and text */
 
-  background-color: #53c153;
+  background-color: rgba(138, 128, 121, 1);
   border: none;
   color: white;
   padding: 5px 20px;
@@ -98,7 +125,7 @@ h3 {
   justify-content: end;
   gap: 0.5rem;
 
-  background-color: #53c153;
+  background-color: rgba(138, 128, 121, 1);
   border: none;
   color: white;
   text-align: center;
@@ -125,7 +152,7 @@ h3 {
   color: white;
 }
 .previous:hover {
-  color: #53c153;
+  color: rgba(138, 128, 121, 1);
 }
 .workout-lists {
   display: flex;
@@ -141,13 +168,13 @@ h3 {
   margin-top: 1rem;
 }
 .quick-start {
-  color: rgb(83, 193, 83); /* green or any highlight */
+  color: rgba(76, 103, 112, 1); /* green or any highlight */
   margin-top: 1rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
 .routines {
-  color: rgb(83, 193, 83); /* green or any highlight */
+  color: rgba(76, 103, 112, 1); /* green or any highlight */
   margin-top: 1rem;
   font-weight: bold;
   font-size: 1.2rem;
@@ -161,7 +188,7 @@ h3 {
   gap: 1rem;
 }
 .section-title {
-  color: rgb(83, 193, 83);
+  color: rgba(76, 103, 112, 1);
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -208,6 +235,6 @@ h3 {
   border-radius: 8px;
 }
 .workout-scroll-area::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(83, 193, 83);
+  background-color: rgba(76, 103, 112, 1);
   border-radius: 8px;
 }

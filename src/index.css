@@ -1,9 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   place-items: center;
   min-width: 100vw;
-  background-color: rgb(44, 41, 41);
+  background-color: black;
   min-height: 100vh;
+  /*rgba(5, 10, 19, 1)*/
 }
 
 * {
