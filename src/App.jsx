@@ -1,6 +1,8 @@
 import Home from "./pages/Home";
 import "./App.css";
 import WorkoutSelector from "./pages/WorkoutSelector";
+import DashBoard from "./pages/DashBoard";
+import Shell from "./layouts/Shell";
 
 //routes import for weightlifting pages
 import WeightRoom from "./pages/Weightlifting/WeightRoom";
@@ -16,15 +18,18 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/workout" element={<WorkoutSelector />} />
+        <Route element={<Shell />}>
+          <Route path="/workout" element={<WorkoutSelector />} />
+          <Route path="/dashboard" element={<DashBoard />} />
 
-        {/*WeightLifting Section*/}
-        <Route path="/weightlifting" element={<WeightRoom />} />
-        <Route path="/weightlifting/log" element={<LogWeightLifting />} />
-        <Route path="/weightlifting/save" element={<Save />} />
+          {/*WeightLifting Section*/}
+          <Route path="/weightlifting" element={<WeightRoom />} />
+          <Route path="/weightlifting/log" element={<LogWeightLifting />} />
+          <Route path="/weightlifting/save" element={<Save />} />
 
-        {/*Running Section*/}
-        <Route path="/running" element={<RunningLog />} />
+          {/*Running Section*/}
+          <Route path="/running" element={<RunningLog />} />
+        </Route>
       </Routes>
     </Router>
   );

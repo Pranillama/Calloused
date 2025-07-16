@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
 
-const Button = ({ children, onClick, className = "", variant = "primary" }) => {
+const Button = ({ children, onClick, className = "", variant = "" }) => {
   const variantClass = {
     primary: "button--primary",
     secondary: "button--secondary",
     third: "button--third",
     small: "button--small",
+    nav: "button--nav",
   };
   return (
     <button
