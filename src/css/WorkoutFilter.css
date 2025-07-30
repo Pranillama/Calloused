@@ -1,0 +1,128 @@
+/* src/css/WorkoutFilter.css */
+
+.workout-filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 10px;
+  }
+  
+  /* Filter icon container */
+  .filter-icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-icon {
+    color: black;
+  }
+  
+  /* Container for workout type buttons with border */
+  .filter-buttons-container {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    background: black;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .filter-btn {
+    background: transparent;
+    border: none;
+    color: #8b9aa8;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .filter-btn:hover {
+    background: #3a4553;
+    color: #ffffff;
+  }
+  
+  .filter-btn.active {
+    background: #2a3441;
+    color: #ffffff;
+  }
+  
+  .time-filter {
+    position: relative;
+  }
+  
+  .time-select {
+    background: black;
+    border: 1px solid white;
+    color: #ffffff;
+    padding: 11.5px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s ease;
+    min-width: 128px;
+  }
+  
+    /* .time-select:hover,
+    .time-select:focus {
+        border-color: White;
+    } */
+  
+   .time-select option { 
+    background:  #2a3441;
+    color: #ffffff;
+    padding: 18px 12px;
+    border-radius: 6px;
+   } 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .workout-filters {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+    
+    .filter-icon-container {
+      align-self: flex-start;
+    }
+    
+    .filter-buttons-container {
+      width: 100%;
+    }
+    
+    .filter-buttons {
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    
+    .filter-btn {
+      flex: 1;
+      justify-content: center;
+      min-width: calc(50% - 2px);
+    }
+    
+    .time-filter {
+      margin-left: 0;
+    }
+    
+    .time-select {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-btn {
+      min-width: 100%;
+      margin-bottom: 2px;
+    }
+  }
