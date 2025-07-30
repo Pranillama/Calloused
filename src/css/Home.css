@@ -1,0 +1,63 @@
+/* Home page styles */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 8vw;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.home-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  max-width: 600px;
+}
+.quote {
+  color: black;
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+  margin: 0 0 3rem 0;
+  font-weight: 400;
+}
+
+.Home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.emoji-circle {
+  flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+  margin-left: 2rem;
+}
+
+.emoji-circle span {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.emoji-circle span:hover {
+  transform: scale(1.1);
+}
+

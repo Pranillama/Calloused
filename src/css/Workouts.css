@@ -1,0 +1,32 @@
+/* src/css/Workouts.css - Page Level Styles Only */
+
+.workouts-page {
+    padding: 0;
+  }
+  
+  /* Workouts List */
+  .workouts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 48px 24px;
+    color: #8b9aa8;
+  }
+  
+  .empty-state h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+  }
+  
+  .empty-state p {
+    color: #8b9aa8;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+  }

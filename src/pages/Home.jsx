@@ -1,36 +1,38 @@
 //import { useState } from "react";
-import "../App.css";
-import frontImage from "../assets/front.jpg";
+import "../css/Button.css";
+import "../css/Home.css";
 import Button from "../components/Buttons";
 import { useNavigate } from "react-router-dom";
+
 function Home() {
   const navigate = useNavigate();
+  
   return (
     <section>
       <div className="home-container">
-        <h1> Calloused </h1>
-        <p className="quote" style={{ marginTop: 10 }}>
+        <h1>Calloused</h1>
+        <p className="quote">
           Build your body. Build your mind. Track your journey.
         </p>
 
-        <div className="exercise-section">
+        <div className="Home-section">
           <Button
             className="button--primary"
-            onClick={() => navigate("/workout")}
+            onClick={() => navigate("/dashboard")}
           >
             Get Started
           </Button>
         </div>
       </div>
 
-      <div className="image">
-        <img
-          src={frontImage}
-          alt="Front"
-          style={{ float: "right", width: "80%", height: "auto" }}
-        />
+      <div className="emoji-circle">
+        <span role="img" aria-label="gym">🏋️‍♂️</span>
+        <span role="img" aria-label="run">🏃‍♂️</span>
+        <span role="img" aria-label="meditate">🧘‍♂️</span>
+        <span role="img" aria-label="journal">📓</span>
       </div>
     </section>
   );
 }
+
 export default Home;

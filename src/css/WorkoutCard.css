@@ -1,0 +1,238 @@
+/* src/css/WorkoutCard.css */
+
+/* Workout Card Styles */
+.workout-card {
+    background: #2a3441;
+    border: 1px solid #3a4553;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .workout-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: #4a5563;
+  }
+  
+  .workout-card-content {
+    padding: 24px;
+  }
+  
+  .workout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .workout-info {
+    flex: 1;
+  }
+  
+  .workout-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+  
+  .workout-meta {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #8b9aa8;
+    font-size: 14px;
+  }
+  
+  .meta-icon {
+    width: 16px;
+    height: 16px;
+    color: #06b6d4;
+  }
+  
+  .workout-badges {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .workout-badge {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid;
+    backdrop-filter: blur(4px);
+  }
+  
+  /* Workout Type Badge Colors */
+  .workout-type-weightlifting {
+    background: rgba(255, 87, 53, 0.2);
+    color: #d90429;
+    border-color: rgba(255, 53, 53, 0.3);
+  }
+  
+  .workout-type-running {
+    background: rgba(59, 246, 90, 0.2);
+    color: rgb(147, 253, 172);
+    border-color: rgba(59, 246, 103, 0.3);
+  }
+  
+  .workout-type-swimming {
+    background: rgba(6, 182, 212, 0.2);
+    color: rgb(103, 232, 249);
+    border-color: rgba(6, 182, 212, 0.3);
+  }
+  
+  .workout-type-other {
+    background: rgba(107, 114, 128, 0.2);
+    color: rgb(209, 213, 219);
+    border-color: rgba(107, 114, 128, 0.3);
+  }
+  
+    /* Workout Mood Badge Colors */
+  .workout-mood-excellent {
+    background: rgba(34, 197, 94, 0.2);
+    color: rgb(134, 239, 172);
+    border-color: rgba(34, 197, 94, 0.3);
+  }
+
+  .workout-mood-good {
+    background: rgba(59, 130, 246, 0.2);
+    color: rgb(147, 197, 253);
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+
+  .workout-mood-okay {
+    background: rgba(234, 179, 8, 0.2);
+    color: rgb(254, 240, 138);
+    border-color: rgba(234, 179, 8, 0.3);
+  }
+
+  .workout-mood-tired {
+    background: rgba(255, 107, 53, 0.2);
+    color: rgb(253, 186, 116);
+    border-color: rgba(255, 107, 53, 0.3);
+  }
+
+  .workout-mood-struggled {
+    background: rgba(239, 68, 68, 0.2);
+    color: rgb(252, 165, 165);
+    border-color: rgba(239, 68, 68, 0.3);
+  }
+  
+  .edit-btn {
+    background: transparent;
+    border: none;
+    color: #8b9aa8;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .edit-btn:hover {
+    color: #06b6d4;
+    background: rgba(6, 182, 212, 0.1);
+  }
+  
+  /* Exercises Section */
+  .exercises-section {
+    margin-bottom: 20px;
+  }
+  
+  .exercises-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+  }
+  
+  .exercises-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .exercise-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: rgba(30, 40, 50, 0.3);
+    border: 1px solid rgba(58, 69, 83, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+  }
+  
+  .exercise-name {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .exercise-details {
+    color: #8b9aa8;
+    font-size: 14px;
+  }
+  
+  /* Workout Notes */
+  .workout-notes {
+    padding-top: 20px;
+    border-top: 1px solid rgba(58, 69, 83, 0.5);
+  }
+  
+  .workout-notes p {
+    color: #8b9aa8;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .delete-btn {
+    background: transparent;
+    border: none;
+    color: #8b9aa8;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .delete-btn:hover {
+    color: #ff4444;
+    background: rgba(255, 68, 68, 0.1);
+  }
+  /* Responsive Design for Cards */
+  @media (max-width: 768px) {
+    .workout-header {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    
+    .workout-badges {
+      align-self: stretch;
+      justify-content: space-between;
+    }
+    
+    .exercise-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    
+    .workout-meta {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }

@@ -1,8 +1,9 @@
 // src/components/Sidebar.jsx
 import { NavLink } from "react-router-dom";
-import { House, Dumbbell } from "lucide-react";
-import "../App.css";
+import { House, Dumbbell, ClipboardCheck } from "lucide-react";
+import "../css/SideBar.css";
 import { useNavigate } from "react-router-dom";
+import "../css/Button.css";
 import Button from "./Buttons";
 
 export default function Sidebar() {
@@ -16,10 +17,14 @@ export default function Sidebar() {
           <House />
           Dashboard
         </Button>
-        <Button className="button--nav" onClick={() => navigate("/workout")}>
+        <Button className="button--nav" onClick={() => navigate("/workouts")}>
           <Dumbbell />
           Workouts
         </Button>
+        <Button className="button--nav" onClick={() => navigate("/plans")}>
+          <ClipboardCheck />
+          Plans
+        </Button> 
       </nav>
     </aside>
   );
